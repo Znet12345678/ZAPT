@@ -13,7 +13,7 @@ if [[ $1 == "install" ]];then
 	/scripts/$2.sh
 elif [[ $1 == "-h" ]];then
 	echo "Reconized Arguments:Install,-h,ibinary,contact";
-elif [[ $1 == "ibinary"
+elif [[ $1 == "ibinary" ]];then
 	echo "WIP";
 elif [[ $1 == "contact" ]];then
 	echo "Made By Zachary James Schlotman. Age 13.";
