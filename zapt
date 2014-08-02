@@ -1,0 +1,18 @@
+#!/bin/bash
+if [[ $1 == "install" ]];then
+
+
+	if [ ! -f /scripts/$2.sh ];then
+		echo "Script Not Found!"; 
+		exit;
+	elif [ $2 == "" ];then
+	{
+		echo "Install:Installs Package";
+	}
+	fi
+	/scripts/$2.sh
+else
+
+	echo "Usage:		Install:looks for package."
+
+fi
