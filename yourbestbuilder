@@ -1,0 +1,13 @@
+#!/bin/bash
+echo -n "Input source Directory:";
+read DIR;
+cd $DIR;
+echo -n "Enter Prefix:";
+read PREFIX;
+echo -n "Enter Aditional config flags:";
+read FLAGS;
+echo "Configuring "$DIR;
+./configure --prefix=$PREFIX $FLAGS;
+make
+make install
+
