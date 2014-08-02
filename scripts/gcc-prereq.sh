@@ -89,4 +89,4 @@ if [ ! -f /usr/include/mpc.h ];then
 		fi
 	fi
 fi
-Successfully Installed GMP, MPFR, MPC!!!
+echo "Successfully Installed GMP, MPFR, MPC!!!"
