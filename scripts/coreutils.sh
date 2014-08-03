@@ -8,6 +8,7 @@ else
 	rm -r /coreutils-build
 	mkdir /coreutils-build
 	cd /coreutils-build
+fi
 wget ftp://ftp.gnu.org/gnu/coreutils/coreutils-8.23.tar.xz
 tar xvf coreutils-8.23.tar.xz
 cd coreutils-8.23
