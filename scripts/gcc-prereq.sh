@@ -2,7 +2,7 @@
  
 echo "Make sure you are root. If you are not STOP THIS PROGRAM NOW!";
 sleep 5;
-if [ ! -f /gcc-pre-req-build ];then
+if [ ! -e /gcc-pre-req-build ];then
 
 mkdir /gcc-pre-req-build
 cd /gcc-pre-req-build
@@ -12,9 +12,9 @@ rm -r /gcc-pre-req-build
 mkdir /gcc-pre-req-build
 cd /gcc-pre-req-build
 fi
-if [ ! -f /usr/include/gmp.h ];then
+if [ ! -e /usr/include/gmp.h ];then
 
-	if [ ! -f /usr/local/include/gmp.h ];then
+	if [ ! -e /usr/local/include/gmp.h ];then
 	
 		echo "I could not find gmp.h!!";
 		echo -n "Please input prefix that you installed it in now, or just press enter to install it.";
@@ -40,14 +40,14 @@ if [ ! -f /usr/include/gmp.h ];then
 	fi
 
 fi
-if [ ! -f /usr/include/mpfr.h/ ];then
+if [ ! -e /usr/include/mpfr.h/ ];then
 
-	if [ ! -f /usr/local/include/mpfr.h ];then
+	if [ ! -e /usr/local/include/mpfr.h ];then
 	
 		echo "I could not find mpfr!";
 		echo -n "Please input prefix that you installed it in now, or just press enter to install it.";
 		read PREFIX_MPFR;
-		if [ ! -f $PREFIX_MPFR/include/mpfr.h ];then
+		if [ ! -e $PREFIX_MPFR/include/mpfr.h ];then
 		
 			wget ftp://ftp.gnu.org/gnu/mpfr/mpfr-3.1.2.tar.xz >> /gcc-build/wget-mpfr-log.txt
 			tar xvf mpfr-3.1.2.tar.xz >> /gcc-build/tar-mpfr-log.txt
@@ -67,11 +67,11 @@ if [ ! -f /usr/include/mpfr.h/ ];then
 		fi
 	fi
 fi
-if [ ! -f /usr/include/mpc.h ];then
-	if [ ! -f /usr/local/include/mpc.h ]
+if [ ! -e /usr/include/mpc.h ];then
+	if [ ! -e /usr/local/include/mpc.h ]
 		echo "Could not find mpc.h enter prefix:"
 		read PREFIX_MPC;
-			if [ ! -f $PREFIX/include/mpc.h ]
+			if [ ! -e $PREFIX/include/mpc.h ]
 				wget ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.2.tar.gz
 				tar xvf mpc-1.0.2.tar.gz
 				cd mpc-1.0.2

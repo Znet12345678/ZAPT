@@ -1,6 +1,6 @@
 echo "You Need root if you don't have root quit NOW!"
 sleep 5;
-if [ ! -f /gcc-build ];then
+if [ ! -e /gcc-build ];then
 mkdir /gcc-build/
 cd /gcc-build/
 else

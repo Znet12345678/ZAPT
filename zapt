@@ -19,6 +19,8 @@ elif [[ $1 == "contact" ]];then
 	echo "Made By Zachary James Schlotman. Age 13.";
 else
 
-	echo "Usage:		Install:looks for package."
-
+	echo "Usage:		Install:Looks for package."
+	echo "			-h:Help";
+	echo "			ibinary:WIP";
+	echo "			contact:Contact info";
 fi

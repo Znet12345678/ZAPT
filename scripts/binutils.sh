@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -f /binutils-build ];then
+if [ ! -e /binutils-build ];then
 	mkdir /binutils-build
 	cd /binutils-build
 else

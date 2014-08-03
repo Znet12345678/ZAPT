@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -f /gawk-build ];then
+if [ ! -e /gawk-build ];then
 mkdir /gawk-build
 cd /gawk-build
 else

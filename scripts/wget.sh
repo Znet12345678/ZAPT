@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "YOU NEED TO BE ROOT!!!!!!!!!!!";
-	if [ ! -f /wget-build ];then
+	if [ ! -e /wget-build ];then
 	mkdir /wget-build
 	cd /wget-build
 else
