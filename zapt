@@ -16,7 +16,9 @@ elif [[ $1 == "-h" ]];then
 elif [[ $1 == "ibinary" ]];then
 	echo "WIP";
 elif [[ $1 == "contact" ]];then
-	echo "Made By Zachary James Schlotman. Age 13.";
+	echo "Made By Zachary James Schlotman. Age 13. Znet12345678@yahoo.com";
+elif [[ $1 == "" ]];then
+	echo "Zapt version 0.1-alpha. Zapt is a virtual package manager that runs local scripts from /scripts. Type -h form help.";
 else
 
 	echo "Usage:		Install:Looks for package."
