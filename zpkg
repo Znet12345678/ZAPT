@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 echo "Decompressing.";
 tar -xf $1
 cp -r ${1%.zpkg} /test
